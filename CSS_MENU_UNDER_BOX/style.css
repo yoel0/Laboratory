@@ -1,9 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
-
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
 }
 
 .container {
@@ -89,7 +88,7 @@
 	background-color: #350757;
 	opacity: 1;
 	border: 1px solid black;
-  border-radius: 50% 200% 50%;
+	border-radius: 50% 200% 50%;
 }
 
 .cube_face--front {
@@ -121,21 +120,21 @@
 }
 
 .heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .para {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .food {
-  color: orange;
+	color: orange;
 }
 
 .sauce {
-  color: red;
+	color: red;
 }
