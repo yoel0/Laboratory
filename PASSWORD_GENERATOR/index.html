@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./script.js" defer></script>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Password Generator</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Gift me a Secured <span>PASS</span>word</h1>
+			<h3 id="passwordDisplay" class="password-display">Look over here..</h3>
+			<form id="passwordGeneratorForm" class="form">
+				<label for="">Number of Characters</label>
+				<div class="character-amount-container">
+					<input
+						type="range"
+						min="1"
+						max="50"
+						value="10"
+						id="characterAmountRange"
+					/>
+					<input
+						class="number-input"
+						type="number"
+						min="1"
+						max="50"
+						value="10"
+						id="characterAmountNumber"
+					/>
+				</div>
+
+				<label for="includeUppercase">Sprinkle some Uppercase</label>
+				<input type="checkbox" id="includeUppercase" />
+
+				<label for="includeNumbers">Salt some Numbers</label>
+				<input type="checkbox" id="includeNumbers" />
+
+				<label for="includeSymbols">Pepper some Symbols</label>
+				<input type="checkbox" id="includeSymbols" />
+
+				<button class="btn" type="submit">Generate Password</button>
+			</form>
+		</div>
+	</body>
+</html>
