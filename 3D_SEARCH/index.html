@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>3D Search</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">
+				<h5 class="name">search here</h5>
+        <input type="text" class="search">
+				<img class="magni" src="./assets/search.png" alt="search" />
+			</div>
+		</div>
+		<script src="./vanilla-tilt.min.js"></script>
+		<script>
+			VanillaTilt.init(document.querySelectorAll('.box'), {
+				max: 25,
+				speed: 400,
+			});
+		</script>
+	</body>
+</html>
