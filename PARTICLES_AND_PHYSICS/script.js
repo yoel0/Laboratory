@@ -67,6 +67,7 @@ class Particle {
 	}
 }
 // console.log(textCoordinates);
+
 function init() {
 	particleArray = [];
 	for (let y = 0, y2 = textCoordinates.height; y < y2; y++) {
