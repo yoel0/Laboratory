@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+}
+
+div#samsara {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-color: black;
+	overflow: hidden;
+}
+
+div.square {
+	box-shadow: 0 0 2px black, 0 0 4px black, 0 0 6px black, 0 0 8px black,
+		0 0 10px black;
+	position: absolute;
+	animation: spin 4s linear infinite reverse;
+}
+
+div.square:nth-child(even) {
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+}
+
+div.square:nth-child(odd) {
+	background: linear-gradient(
+    90deg,
+    black 0%,
+    black 50%,
+    whitesmoke 100%
+  );
+}
+
+@keyframes spin {
+	from {
+		transfrom: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
