@@ -7,9 +7,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  /* background: #1B757A; */
-}
+/* body {
+  background: #1B757A;
+} */
 
 section {
   position: relative;
@@ -39,8 +39,8 @@ section #weaver {
 .w .panels {
   position: relative;
   display: block;
-  width: 4vw;
-  height: 4vh;
+  width: 5vw;
+  height: 5vh;
   animation: animate 2s ease-in-out forwards;
   animation-delay: 1s;
 }

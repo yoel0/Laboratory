@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Luckiest Guy', cursive;
+}
+
+body {
+	min-height: 100vh;
+	background: radial-gradient(#800020, #000000);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	position: relative;
+	width: 300px;
+	height: 270px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	transform: perspective(500px) rotateX(50deg) rotateY(200deg);
+}
+
+.container span {
+	position: absolute;
+	display: block;
+	border: 15px solid #077b8a;
+	border-radius: 50%;
+	animation: animate 6s ease-in-out infinite;
+	box-shadow: 0 2.5px 0 #5c3c92, inset 0 5px 0 #a2d5c6;
+	animation-delay: calc(-1s * var(--i));
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+		0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+		0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+		-0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1),
+		-0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+@keyframes animate {
+	0% {
+		transform: translateZ(-100px);
+		width: 100%;
+		height: 100%;
+	}
+	25% {
+		transform: translateZ(100px);
+		width: 100%;
+		height: 100%;
+	}
+	50% {
+		transform: translateZ(100px);
+		width: 15%;
+		height: 15%;
+	}
+	75% {
+		transform: translateZ(-100px);
+		width: 15%;
+		height: 15%;
+	}
+	100% {
+		transform: translateZ(-100px);
+		width: 100%;
+		height: 100%;
+	}
+}
