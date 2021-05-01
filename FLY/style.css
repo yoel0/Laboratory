@@ -30,4 +30,18 @@ section .text {
   max-width: 900px;
 }
 
+section .text2 {
+  position: relative;
+  text-align: center;
+  margin: 30px;
+  max-width: 900px;
+  color: #b1de00;
+  height: 100px;
+}
+
+section .text2 span {
+  position: relative;
+  display: inline-block;
+}
+
 
