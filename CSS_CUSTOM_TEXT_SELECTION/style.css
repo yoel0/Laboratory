@@ -1,3 +1,8 @@
+/* Text Selection, CSS, Visual
+ *  Changes the styling of text selection.
+ *  Use the ::selection pseudo-selector to style text within it when selected.
+ */
+
 ::selection {
   background: deeppink;
   color: white;
