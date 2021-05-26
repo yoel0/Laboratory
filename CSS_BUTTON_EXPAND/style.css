@@ -1,0 +1,20 @@
+/* Button Expand, CSS, Animation
+ * Creates a grow animation on hover.
+ * 1. Use an appropriate transition to animate changes to the element.
+ * 2. Use the :hover pseudo-class to change the transform to scale(1.1),
+ * growing the element when the user hovers over it.
+ */
+
+.button-expand {
+  color: cyan;
+  background-color: transparent;
+  border: 1px solid cyan;
+  border-radius: 4px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-expand:hover {
+  transform: scale(1.1);
+}
